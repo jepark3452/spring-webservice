@@ -1,0 +1,57 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+### 기본사용
+GET https://www.devbeginner.com
+
+### 직접 JSON 사용
+POST http://localhost:8080/group
+Content-Type: application/json
+
+{
+  "groupName": "그룹명",
+  "members": [
+    "회원1",
+    "회원2",
+    "회원3"
+  ],
+  "date": {
+    "year": 2018,
+    "month": 10,
+    "day": 12
+  }
+}
+
+### 로컬 파일 사용
+POST http://localhost:8080/group
+Content-Type: application/json
+
+< ./post.json
+
+###
+
+### 로컬
+GET http://localhost:8080/hello
+
+###
+
+## 개발 오류
+GET http://localhost:8080/dev/hello
+
+###
+
+## 개발 정상
+GET http://localhost:8080/dev/hello
+Authorization: DEV
+
+###
+
+### 운영
+GET http://localhost:8080/real/hello
+Authorization: PRODUCTION
+
+###

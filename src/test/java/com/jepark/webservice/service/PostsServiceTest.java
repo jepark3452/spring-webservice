@@ -54,7 +54,7 @@ public class PostsServiceTest {
         assertThat(posts.getTitle()).isEqualTo(dto.getTitle());
     }
 
-    @Test
+    /*@Test
     public void 최초데이터가_역순으로_조회된다() {
         // given
         Posts entity = Posts.builder()
@@ -73,6 +73,5 @@ public class PostsServiceTest {
         PostsMainResponseDto descDto = list.get(0);
         assertThat(descDto.getAuthor()).isEqualTo(dto.getAuthor());
         assertThat(descDto.getTitle()).isEqualTo(dto.getTitle());
-    }
-
+    }*/
 }

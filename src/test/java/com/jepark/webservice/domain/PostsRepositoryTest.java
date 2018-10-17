@@ -80,7 +80,7 @@ public class PostsRepositoryTest {
         assertTrue(posts.getModifiedDate().isAfter(now));
     }
 
-    @Test
+    /*@Test
     @Transactional(readOnly = true)
     public void 최초데이터가_역순으로_조회된다() {
         // given
@@ -96,6 +96,6 @@ public class PostsRepositoryTest {
         Posts posts = list.findFirst().get();
         assertThat(posts.getAuthor(), is(entity.getAuthor()));
         assertThat(posts.getTitle(), is(entity.getTitle()));
-    }
+    }*/
 
 }
